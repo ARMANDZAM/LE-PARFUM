@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfumes de [Tu Nombre]</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+        .header {
+            background-color: #ffcc00;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .description {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .product {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .product-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin: 20px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+        }
+        .product-item img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .product-item h3 {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+        .product-item p {
+            font-size: 1.2em;
+            color: #555;
+        }
+        .product-item .price {
+            font-size: 1.5em;
+            color: #e67e22;
+            margin: 10px 0;
+        }
+        .testimonial {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .testimonial p {
+            font-style: italic;
+            color: #777;
+        }
+        .testimonial span {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+            color: #333;
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .contact-form {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        .contact-form input, .contact-form textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .contact-form button {
+            background-color: #ffcc00;
+            color: #fff;
+            border: none;
+            padding: 15px;
+            border-radius: 4px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #e6b800;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Perfumes de [Tu Nombre]</h1>
+    </div>
+    <div class="container">
+        <div class="description">
+            <p>Descubre nuestra exclusiva colección de perfumes. Fragancias únicas para cada ocasión.</p>
+        </div>
+        <div class="product">
+            <div class="product-item">
+                <img src="perfume1.jpg" alt="Perfume 1">
+                <h3>Perfume 1</h3>
+                <p>Descripción breve del perfume 1.</p>
+                <p class="price">$50</p>
+            </div>
+            <div class="product-item">
+                <img src="perfume2.jpg" alt="Perfume 2">
+                <h3>Perfume 2</h3>
+                <p>Descripción breve del perfume 2.</p>
+                <p class="price">$60</p>
+            </div>
+            <div class="product-item">
+                <img src="perfume3.jpg" alt="Perfume 3">
+                <h3>Perfume 3</h3>
+                <p>Descripción breve del perfume 3.</p>
+                <p class="price">$70</p>
+            </div>
+        </div>
+        <div class="testimonial">
+            <p>"Los mejores perfumes que he probado, realmente únicos y duraderos."</p>
+            <span>- Cliente Satisfecho</span>
+        </div>
+        <div class="contact-form">
+            <h3>Contacto</h3>
+            <form action="https://formspree.io/f/[tu-form-id]" method="POST">
+                <input type="text" name="nombre" placeholder="Tu nombre" required>
+                <input type="email" name="email" placeholder="Tu email" required>
+                <textarea name="mensaje" placeholder="Tu mensaje" rows="4" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <p>© 2024 Perfumes de [Tu Nombre]. Todos los derechos reservados.</p>
+    </div>
+</body>
+</html>
